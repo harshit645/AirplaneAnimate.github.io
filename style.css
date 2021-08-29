@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.runway{
+    background-image: url('images/road.jpg');
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.airplane{
+    position: absolute;
+    width: 500px;
+    bottom: 120px;
+    right: -200px;
+    animation: plane 4s linear infinite;
+    transform-origin:100% 50%;
+}
+
+@keyframes plane {
+
+    0%{
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+
+    30%{
+        /* -500px b'coz airplane move in negative x direction */
+        transform: translateX(-500px) translateY(0) rotate(0deg);  
+    }
+
+    100%{
+        transform: translate(-1500px) translateY(-200px) rotate(20deg);
+    }
+    
+}
+
+@media(max-width:350px){
+    
+    .airplane{
+        width: 150px;
+        bottom: 140px;
+        right: -200px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-250px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-800px) translateY(-120px) rotate(15deg);
+        }
+        
+    }
+    
+}
+
+@media(min-width:350px) and (max-width:450px){
+
+    .airplane{
+        width: 180px;
+        bottom: 110px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-270px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-860px) translateY(-120px) rotate(15deg);
+        }
+        
+    }
+    
+}
+
+
+@media(min-width:450px) and (max-width:550px){
+
+    .airplane{
+        width: 240px;
+        bottom: 105px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-290px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-900px) translateY(-140px) rotate(20deg);
+        }
+        
+    }
+    
+}
+
+
+@media(min-width:550px) and (max-width:700px){
+
+    .airplane{
+        width: 280px;
+        bottom: 100px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-350px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-1000px) translateY(-160px) rotate(20deg);
+        }
+        
+    }
+    
+}
+
+
+@media(min-width:700px) and (max-width:900px){
+
+    .airplane{
+        width: 350px;
+        bottom: 100px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-400px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-1200px) translateY(-180px) rotate(20deg);
+        }
+        
+    }
+    
+}
+
+@media(min-width:900px) and (max-width:1100px){
+
+    .airplane{
+        width: 450px;
+        bottom: 100px;
+    }
+
+    @keyframes plane {
+
+        0%{
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+    
+        30%{
+            transform: translateX(-450px) translateY(0) rotate(0deg);  
+        }
+    
+        100%{
+            transform: translate(-1350px) translateY(-200px) rotate(20deg);
+        }
+        
+    }
+    
+}
